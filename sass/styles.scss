@@ -32,3 +32,105 @@
     margin: 0;
   }
 }
+
+.topbar {
+  .icon {
+    display: block;
+    position: relative;
+    float: left;
+    clear: none;
+
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+
+    background-color: #fff;
+    border-radius: 45px;
+  }
+
+  h1 {
+    display: block;
+    position: relative;
+    float: left;
+    clear: none;
+
+    line-height: 120px;
+    font-weight: 400 !important;
+    color: #fff;
+    margin: 0;
+  }
+
+  .info
+  {
+    display: block;
+    position: relative;
+    float: right;
+    clear: none;
+
+    height: 120px;
+    width: auto;
+    margin: 0;
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      text-decoration: no-underline;
+      margin: 30px 100px;
+
+      color: #fff !important;
+
+      a {
+        color: #fff !important;
+        font-weight: 500;
+        font-size: 24px;
+
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  .settings {
+    display: block;
+    position: relative;
+    float: right;
+    clear: none;
+
+    height: 120px;
+    width: auto;
+    margin: 0;
+
+    button {
+      background-color: transparent;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    svg {
+      height: 70px;
+      width: 70px;
+
+      margin: 25px;
+      fill: #fff;
+    }
+  }
+}
+
+//MENU SETTINGS
+.menu {
+
+}
+
+//CONTENT SETTINGS
+.content {
+  .page-title {
+    height: 70px;
+
+    h2 {
+      color: $brand;
+    }
+  }
+  form label {
+    font-weight: 400;
+  }
+}

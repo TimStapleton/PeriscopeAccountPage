@@ -8822,3 +8822,89 @@ button.close {
   line-height: 40px;
   margin: 0;
 }
+
+/* line 37, ../sass/styles.scss */
+.topbar .icon {
+  display: block;
+  position: relative;
+  float: left;
+  clear: none;
+  width: 90px;
+  height: 90px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 45px;
+}
+/* line 51, ../sass/styles.scss */
+.topbar h1 {
+  display: block;
+  position: relative;
+  float: left;
+  clear: none;
+  line-height: 120px;
+  font-weight: 400 !important;
+  color: #fff;
+  margin: 0;
+}
+/* line 63, ../sass/styles.scss */
+.topbar .info {
+  display: block;
+  position: relative;
+  float: right;
+  clear: none;
+  height: 120px;
+  width: auto;
+  margin: 0;
+}
+/* line 74, ../sass/styles.scss */
+.topbar .info p {
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: no-underline;
+  margin: 30px 100px;
+  color: #fff !important;
+}
+/* line 82, ../sass/styles.scss */
+.topbar .info p a {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: underline !important;
+}
+/* line 92, ../sass/styles.scss */
+.topbar .settings {
+  display: block;
+  position: relative;
+  float: right;
+  clear: none;
+  height: 120px;
+  width: auto;
+  margin: 0;
+}
+/* line 102, ../sass/styles.scss */
+.topbar .settings button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 109, ../sass/styles.scss */
+.topbar .settings svg {
+  height: 70px;
+  width: 70px;
+  margin: 25px;
+  fill: #fff;
+}
+
+/* line 126, ../sass/styles.scss */
+.content .page-title {
+  height: 70px;
+}
+/* line 129, ../sass/styles.scss */
+.content .page-title h2 {
+  color: #1c7892;
+}
+/* line 133, ../sass/styles.scss */
+.content form label {
+  font-weight: 400;
+}
