@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1463314222);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1463314222#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1463314222) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1463314222) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1463314222) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1463314222#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1463337308);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1463337308#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1463337308) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1463337308) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1463337308) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1463337308#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../sass/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8792,30 +8792,22 @@ button.close {
   }
 }
 /* line 7, ../sass/styles.scss */
+body {
+  background-color: #0d4859;
+}
+
+/* line 10, ../sass/styles.scss */
 .topbar {
   height: 120px;
   background-color: #3a9fbc;
 }
 
-/* line 12, ../sass/styles.scss */
-.menu {
-  background-color: #0d4859;
-  border-radius: 0;
-  position: relative;
-  height: 100vh;
-}
-
-/* line 20, ../sass/styles.scss */
-.content .row {
-  padding: 0 36px;
-}
-
-/* line 24, ../sass/styles.scss */
+/* line 17, ../sass/styles.scss */
 .row.divider {
   height: 40px;
   background-color: #1c7892 !important;
 }
-/* line 28, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 .row.divider h3 {
   color: #fff;
   font-size: 24px;
@@ -8823,7 +8815,7 @@ button.close {
   margin: 0;
 }
 
-/* line 37, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 .topbar .icon {
   display: block;
   position: relative;
@@ -8835,7 +8827,7 @@ button.close {
   background-color: #fff;
   border-radius: 45px;
 }
-/* line 51, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
 .topbar h1 {
   display: block;
   position: relative;
@@ -8846,7 +8838,7 @@ button.close {
   color: #fff;
   margin: 0;
 }
-/* line 63, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 .topbar .info {
   display: block;
   position: relative;
@@ -8856,7 +8848,7 @@ button.close {
   width: auto;
   margin: 0;
 }
-/* line 74, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .topbar .info p {
   font-size: 20px;
   line-height: 30px;
@@ -8864,14 +8856,14 @@ button.close {
   margin: 30px 100px;
   color: #fff !important;
 }
-/* line 82, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 .topbar .info p a {
   color: #fff !important;
   font-weight: 500;
   font-size: 24px;
   text-decoration: underline !important;
 }
-/* line 92, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .topbar .settings {
   display: block;
   position: relative;
@@ -8881,14 +8873,14 @@ button.close {
   width: auto;
   margin: 0;
 }
-/* line 102, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .topbar .settings button {
   background-color: transparent;
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 109, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .topbar .settings svg {
   height: 70px;
   width: 70px;
@@ -8896,15 +8888,126 @@ button.close {
   fill: #fff;
 }
 
-/* line 126, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
+.menu {
+  background-color: #0d4859;
+  border-radius: 0;
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  box-shadow: 1px 0px 0px #0d4859;
+  margin: 0 !important;
+}
+/* line 124, ../sass/styles.scss */
+.menu h2 {
+  position: fixed;
+  left: 64px;
+  top: 80px;
+  color: #fff !important;
+  font-weight: 500;
+  margin: 80px 0 30px 0;
+}
+/* line 135, ../sass/styles.scss */
+.menu ul {
+  position: fixed;
+  left: 0;
+  top: 240px;
+  width: 100%;
+}
+/* line 143, ../sass/styles.scss */
+.menu ul li {
+  margin-top: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* line 147, ../sass/styles.scss */
+.menu ul li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* line 150, ../sass/styles.scss */
+.menu ul li a {
+  color: #a9a9a9 !important;
+  background-color: #0a3c4a !important;
+  border-radius: 0 !important;
+}
+/* line 155, ../sass/styles.scss */
+.menu ul li a:hover {
+  color: #fff !important;
+  background-color: #0d4859 !important;
+}
+
+/* line 164, ../sass/styles.scss */
+.content {
+  background-color: #fff;
+  min-height: 100vh;
+  height: auto;
+}
+/* line 169, ../sass/styles.scss */
+.content .row {
+  padding: 0 36px;
+}
+/* line 173, ../sass/styles.scss */
 .content .page-title {
   height: 70px;
 }
-/* line 129, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .content .page-title h2 {
   color: #1c7892;
 }
-/* line 133, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .content form label {
+  display: inline-block;
+  width: 100%;
   font-weight: 400;
+  margin-bottom: 0px;
+}
+/* line 188, ../sass/styles.scss */
+.content form .row {
+  padding: 0 !important;
+}
+
+/* line 193, ../sass/styles.scss */
+.search-settings {
+  padding: 20px 36px !important;
+}
+
+/* line 197, ../sass/styles.scss */
+.search-results {
+  padding: 20px 36px !important;
+  height: 1000px;
+}
+
+/* line 202, ../sass/styles.scss */
+.search-item {
+  height: 90px;
+  border-top: 1px solid #1c7892;
+  color: #1c7892 !important;
+}
+/* line 207, ../sass/styles.scss */
+.search-item:last-child {
+  border-bottom: 1px solid #1c7892;
+}
+/* line 211, ../sass/styles.scss */
+.search-item .avatar {
+  display: block;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 17px 0px;
+  border: 1px solid #1c7892;
+  border-radius: 27.5px;
+}
+/* line 221, ../sass/styles.scss */
+.search-item .blogger, .search-item .subscribers, .search-item .price-1, .search-item .price-2, .search-item .rating {
+  line-height: 90px;
+}
+/* line 223, ../sass/styles.scss */
+.search-item .blogger h2, .search-item .subscribers h2, .search-item .price-1 h2, .search-item .price-2 h2, .search-item .rating h2 {
+  line-height: 90px;
+  margin: 0;
+}
+/* line 229, ../sass/styles.scss */
+.search-item .audience {
+  line-hegiht: 45px;
+  margin: 0;
+  margin-top: 15px;
 }
