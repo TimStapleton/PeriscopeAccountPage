@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1463337308);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1463337308#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1463337308) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1463337308) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1463337308) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1463337308#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1463314222);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1463314222#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1463314222) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1463314222) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1463314222) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1463314222#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../sass/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8984,7 +8984,9 @@ body {
   display: block;
   box-sizing: border-box;
   position: relative;
-  min-width: 50%;
+  min-width: 100px;
+  width: 50%;
+  max-width: 240px;
   height: 34px;
   margin: 20px auto 0px auto;
   padding: 0px 10px;
@@ -8995,34 +8997,34 @@ body {
   font-size: 18px;
   transition: all 0.5s ease-in-out;
 }
-/* line 228, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .content form button:hover {
   background-color: #1c7892 !important;
 }
 
-/* line 234, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .search-settings {
   padding: 20px 36px !important;
 }
 
-/* line 238, ../sass/styles.scss */
-.search-results {
+/* line 240, ../sass/styles.scss */
+.results {
   padding: 20px 0px !important;
   height: 1000px;
   overflow: hidden;
 }
 
-/* line 245, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .search-item {
   height: 90px;
   border-top: 1px solid #1c7892;
   color: #1c7892 !important;
 }
-/* line 250, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .search-item:last-child {
   border-bottom: 1px solid #1c7892;
 }
-/* line 254, ../sass/styles.scss */
+/* line 256, ../sass/styles.scss */
 .search-item .avatar {
   display: block;
   position: relative;
@@ -9035,52 +9037,52 @@ body {
   background-image: url("../images/wylsacom-logo.png");
   background-size: cover;
 }
-/* line 268, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .search-item a, .search-item p {
   margin: 0;
   font-size: 18px;
   white-space: nowrap;
 }
-/* line 274, ../sass/styles.scss */
+/* line 276, ../sass/styles.scss */
 .search-item h2 {
   font-size: 24px;
   white-space: nowrap;
 }
-/* line 278, ../sass/styles.scss */
+/* line 280, ../sass/styles.scss */
 .search-item h3 {
   font-size: 20px;
   white-space: nowrap;
 }
-/* line 283, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .search-item .blogger, .search-item .subscribers, .search-item .price-1, .search-item .price-2, .search-item .rating, .search-item .cost, .search-item .deadline, .search-item .status, .search-item .more {
   line-height: 90px;
 }
-/* line 286, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .search-item .blogger h2, .search-item .blogger a, .search-item .blogger p, .search-item .subscribers h2, .search-item .subscribers a, .search-item .subscribers p, .search-item .price-1 h2, .search-item .price-1 a, .search-item .price-1 p, .search-item .price-2 h2, .search-item .price-2 a, .search-item .price-2 p, .search-item .rating h2, .search-item .rating a, .search-item .rating p, .search-item .cost h2, .search-item .cost a, .search-item .cost p, .search-item .deadline h2, .search-item .deadline a, .search-item .deadline p, .search-item .status h2, .search-item .status a, .search-item .status p, .search-item .more h2, .search-item .more a, .search-item .more p {
   line-height: 90px;
   margin: 0;
 }
-/* line 292, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 .search-item .orderer {
   padding: 10px 0;
 }
-/* line 294, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .search-item .orderer h2, .search-item .orderer h3 {
   line-height: 35px;
   margin: 0;
 }
-/* line 300, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 .search-item .audience {
   line-hegiht: 45px;
   margin: 0;
   margin-top: 15px;
 }
 
-/* line 307, ../sass/styles.scss */
+/* line 309, ../sass/styles.scss */
 .tab {
   padding: 0 !important;
 }
-/* line 310, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 .tab ul li {
   box-sizing: border-box;
   padding: 0 !important;
@@ -9088,11 +9090,11 @@ body {
   border: 0 !important;
   border-right: 1px solid #17657b !important;
 }
-/* line 318, ../sass/styles.scss */
+/* line 320, ../sass/styles.scss */
 .tab ul li:last-child {
   border: 0 !important;
 }
-/* line 322, ../sass/styles.scss */
+/* line 324, ../sass/styles.scss */
 .tab ul li a {
   font-size: 24px;
   letter-spacing: 0.48px;
@@ -9106,15 +9108,15 @@ body {
   background-color: #1c7892 !important;
   color: #fff !important;
 }
-/* line 339, ../sass/styles.scss */
+/* line 341, ../sass/styles.scss */
 .tab ul li a:hover {
   background-color: #3a9fbc !important;
 }
-/* line 344, ../sass/styles.scss */
+/* line 346, ../sass/styles.scss */
 .tab ul li.active {
   border: 0 !important;
 }
-/* line 347, ../sass/styles.scss */
+/* line 349, ../sass/styles.scss */
 .tab ul li.active a {
   border: 0 !important;
   border-radius: 0 !important;
@@ -9122,7 +9124,12 @@ body {
   color: #3a9fbc !important;
 }
 
-/* line 361, ../sass/styles.scss */
+/* line 363, ../sass/styles.scss */
 .tab-pane {
   padding: 20px 0 !important;
+}
+
+/* line 367, ../sass/styles.scss */
+#create {
+  padding: 20px 36px !important;
 }

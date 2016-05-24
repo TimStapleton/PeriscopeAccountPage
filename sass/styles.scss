@@ -210,7 +210,9 @@ body {
     display: block;
     box-sizing: border-box;
     position: relative;
-    min-width: 50%;
+    min-width: 100px;
+    width: 50%;
+    max-width: 240px;
     height: 34px;
 
     margin: 20px auto 0px auto;
@@ -235,7 +237,7 @@ body {
   padding: 20px 36px !important;
 }
 
-.search-results {
+.results {
   padding: 20px 0px !important;
   height: 1000px;
 
@@ -360,4 +362,8 @@ body {
 
 .tab-pane {
   padding: 20px 0 !important;
+}
+
+#create {
+  padding: 20px 36px !important;
 }
