@@ -8824,10 +8824,12 @@ body {
   width: 90px;
   height: 90px;
   margin: 15px;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 45px;
+  background-image: url("../images/user-icon.svg");
+  background-size: cover;
 }
-/* line 44, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 .topbar h1 {
   display: block;
   position: relative;
@@ -8838,7 +8840,7 @@ body {
   color: #fff;
   margin: 0;
 }
-/* line 56, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .topbar .info {
   display: block;
   position: relative;
@@ -8848,7 +8850,7 @@ body {
   width: auto;
   margin: 0;
 }
-/* line 67, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .topbar .info p {
   font-size: 20px;
   line-height: 30px;
@@ -8856,14 +8858,14 @@ body {
   margin: 30px 100px;
   color: #fff !important;
 }
-/* line 75, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .topbar .info p a {
   color: #fff !important;
   font-weight: 500;
   font-size: 24px;
   text-decoration: underline !important;
 }
-/* line 85, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .topbar .settings {
   display: block;
   position: relative;
@@ -8873,14 +8875,14 @@ body {
   width: auto;
   margin: 0;
 }
-/* line 95, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .topbar .settings button {
   background-color: transparent;
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 102, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 .topbar .settings svg {
   height: 70px;
   width: 70px;
@@ -8888,7 +8890,7 @@ body {
   fill: #fff;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .menu {
   background-color: #0d4859;
   border-radius: 0;
@@ -8898,7 +8900,7 @@ body {
   box-shadow: 1px 0px 0px #0d4859;
   margin: 0 !important;
 }
-/* line 124, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .menu h2 {
   position: fixed;
   left: 64px;
@@ -8907,107 +8909,220 @@ body {
   font-weight: 500;
   margin: 80px 0 30px 0;
 }
-/* line 135, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .menu ul {
   position: fixed;
   left: 0;
   top: 240px;
   width: 100%;
 }
-/* line 143, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .menu ul li {
   margin-top: 0 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
-/* line 147, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .menu ul li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-/* line 150, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 .menu ul li a {
   color: #a9a9a9 !important;
   background-color: #0a3c4a !important;
   border-radius: 0 !important;
 }
-/* line 155, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 .menu ul li a:hover {
   color: #fff !important;
   background-color: #0d4859 !important;
 }
 
-/* line 164, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .content {
   background-color: #fff;
   min-height: 100vh;
   height: auto;
 }
-/* line 169, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .content .row {
   padding: 0 36px;
 }
-/* line 173, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .content .page-title {
+  background-color: #f8f8f8;
   height: 70px;
 }
-/* line 176, ../sass/styles.scss */
-.content .page-title h2 {
-  color: #1c7892;
-}
 /* line 180, ../sass/styles.scss */
+.content .page-title h2 {
+  color: #3a9fbc;
+}
+/* line 184, ../sass/styles.scss */
 .content form label {
   display: inline-block;
   width: 100%;
   font-weight: 400;
   margin-bottom: 0px;
 }
-/* line 188, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .content form .row {
   padding: 0 !important;
 }
+/* line 196, ../sass/styles.scss */
+.content form input {
+  border: 1px solid #cccccc !important;
+  background-color: #ebebeb !important;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+/* line 203, ../sass/styles.scss */
+.content form input:focus {
+  border: 1px solid #3a9fbc !important;
+  box-shadow: 0 0 0 transparent !important;
+}
+/* line 209, ../sass/styles.scss */
+.content form button {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 50%;
+  height: 34px;
+  margin: 20px auto 0px auto;
+  padding: 0px 10px;
+  background-color: #3a9fbc !important;
+  border: 0 !important;
+  border-radius: 8px;
+  line-height: 34px;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
+/* line 228, ../sass/styles.scss */
+.content form button:hover {
+  background-color: #1c7892 !important;
+}
 
-/* line 193, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 .search-settings {
   padding: 20px 36px !important;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .search-results {
-  padding: 20px 36px !important;
+  padding: 20px 0px !important;
   height: 1000px;
+  overflow: hidden;
 }
 
-/* line 202, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .search-item {
   height: 90px;
   border-top: 1px solid #1c7892;
   color: #1c7892 !important;
 }
-/* line 207, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .search-item:last-child {
   border-bottom: 1px solid #1c7892;
 }
-/* line 211, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .search-item .avatar {
   display: block;
   position: relative;
   width: 55px;
   height: 55px;
   margin: 17px 0px;
-  border: 1px solid #1c7892;
+  border: 0px solid #1c7892;
   border-radius: 27.5px;
+  background-color: #1c7892;
+  background-image: url("../images/wylsacom-logo.png");
+  background-size: cover;
 }
-/* line 221, ../sass/styles.scss */
-.search-item .blogger, .search-item .subscribers, .search-item .price-1, .search-item .price-2, .search-item .rating {
+/* line 268, ../sass/styles.scss */
+.search-item a, .search-item p {
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap;
+}
+/* line 274, ../sass/styles.scss */
+.search-item h2 {
+  font-size: 24px;
+  white-space: nowrap;
+}
+/* line 278, ../sass/styles.scss */
+.search-item h3 {
+  font-size: 20px;
+  white-space: nowrap;
+}
+/* line 283, ../sass/styles.scss */
+.search-item .blogger, .search-item .subscribers, .search-item .price-1, .search-item .price-2, .search-item .rating, .search-item .cost, .search-item .deadline, .search-item .status, .search-item .more {
   line-height: 90px;
 }
-/* line 223, ../sass/styles.scss */
-.search-item .blogger h2, .search-item .subscribers h2, .search-item .price-1 h2, .search-item .price-2 h2, .search-item .rating h2 {
+/* line 286, ../sass/styles.scss */
+.search-item .blogger h2, .search-item .blogger a, .search-item .blogger p, .search-item .subscribers h2, .search-item .subscribers a, .search-item .subscribers p, .search-item .price-1 h2, .search-item .price-1 a, .search-item .price-1 p, .search-item .price-2 h2, .search-item .price-2 a, .search-item .price-2 p, .search-item .rating h2, .search-item .rating a, .search-item .rating p, .search-item .cost h2, .search-item .cost a, .search-item .cost p, .search-item .deadline h2, .search-item .deadline a, .search-item .deadline p, .search-item .status h2, .search-item .status a, .search-item .status p, .search-item .more h2, .search-item .more a, .search-item .more p {
   line-height: 90px;
   margin: 0;
 }
-/* line 229, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
+.search-item .orderer {
+  padding: 10px 0;
+}
+/* line 294, ../sass/styles.scss */
+.search-item .orderer h2, .search-item .orderer h3 {
+  line-height: 35px;
+  margin: 0;
+}
+/* line 300, ../sass/styles.scss */
 .search-item .audience {
   line-hegiht: 45px;
   margin: 0;
   margin-top: 15px;
+}
+
+/* line 307, ../sass/styles.scss */
+.tab {
+  padding: 0 !important;
+}
+/* line 310, ../sass/styles.scss */
+.tab ul li {
+  box-sizing: border-box;
+  padding: 0 !important;
+  height: 40px;
+  border: 0 !important;
+  border-right: 1px solid #17657b !important;
+}
+/* line 318, ../sass/styles.scss */
+.tab ul li:last-child {
+  border: 0 !important;
+}
+/* line 322, ../sass/styles.scss */
+.tab ul li a {
+  font-size: 24px;
+  letter-spacing: 0.48px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: #1c7892 !important;
+  color: #fff !important;
+}
+/* line 339, ../sass/styles.scss */
+.tab ul li a:hover {
+  background-color: #3a9fbc !important;
+}
+/* line 344, ../sass/styles.scss */
+.tab ul li.active {
+  border: 0 !important;
+}
+/* line 347, ../sass/styles.scss */
+.tab ul li.active a {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: #fff !important;
+  color: #3a9fbc !important;
+}
+
+/* line 361, ../sass/styles.scss */
+.tab-pane {
+  padding: 20px 0 !important;
 }

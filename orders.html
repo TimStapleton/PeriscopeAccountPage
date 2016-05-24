@@ -2,15 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Find blogger | Trendstreamer</title>
+    <title>Orders | Trendstreamer</title>
     <link href="stylesheets/styles.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row topbar">
-        <div class="icon">
-            <img src="images/icon.png" alt="">
-        </div>
+        <div class="icon"></div>
         <h1 class="name">Дмитрий Иванов</h1>
         <div class="settings">
             <button>
@@ -27,7 +25,7 @@
         <nav class="navbar col-sm-3 col-md-2 col-lg-2 col-xl-1 menu">
             <h2 class="text-center">Меню</h2>
             <ul class="nav nav-navbar nav-pills nav-stacked">
-                <li><a href="#">Домашняя</a></li>
+                <li><a href="index.html">Домашняя</a></li>
                 <li><a href="#">Заказы</a></li>
                 <li><a href="#">Найти блоггера</a></li>
                 <li><a href="#">Сообщения</a></li>
@@ -36,111 +34,125 @@
         </nav>
         <div class="col-sm-9 col-md-10 col-lg-10 col-xl-11 content">
             <div class="row page-title">
-                <h2 class="text-uppercase">Поиск блоггера</h2>
+                <h2 class="text-uppercase">Заказы</h2>
             </div>
-            <div class="row divider">
-                <h3>Настройки поиска</h3>
+            <div class="row tab">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active col-xs-4">
+                        <a class="text-center" href="#create" aria-controls="create" role="tab" data-toggle="tab">Создать</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a class="text-center" href="#current" aria-controls="current" role="tab" data-toggle="tab">Текущие</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a class="text-center" href="#completed" aria-controls="completed" role="tab" data-toggle="tab">Завершенные</a>
+                    </li>
+                </ul>
             </div>
-            <div class="row container-fluid search-settings">
-                <form action="">
+            <div class="row container-fluid tab-content">
+                <div role="tabpanel" class="tab-pane active" id="create">
+                    <p class="text-center">Для создания заказа заполните форму ниже</p>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6 form-group">
-                            <label for="" class="control-label">Цена рекламы:</label>
-                            <div class="row">
-                                <div class="col-md-1 col-sm-2">от</div>
-                                <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
-                                <div class="col-md-1 col-sm-2">до</div>
-                                <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 form-group">
-                            <div class="row">
-                                <label for="" class="control-label">Пол:</label>
-                            </div>
-                            <div class="row">
-                                <div class="radio col-md-4 col-sm-12">
-                                    <label>
-                                        <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
-                                        Мужской
-                                    </label>
-                                </div>
-                                <div class="radio col-md-4 col-sm-12">
-                                    <label>
-                                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-                                        Женский
-                                    </label>
-                                </div>
-                                <div class="radio col-md-4 col-sm-12">
-                                    <label>
-                                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-                                        Неважно
-                                    </label>
+                        <div class="col-md-6 col-sm-12"><h2 class="text-center">Информация о продукте</h2></div>
+                        <div class="col-md-6 col-sm-12"><h2 class="text-center">Аудитория</h2></div>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <label for="" class="control-label">Цена рекламы:</label>
+                                <div class="row">
+                                    <div class="col-md-1 col-sm-2">от</div>
+                                    <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
+                                    <div class="col-md-1 col-sm-2">до</div>
+                                    <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 form-group">
-                            <label for="" class="control-label">Тематика:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-sm-12 col-md-6 form-group">
-                            <label for="" class="control-label">Подписчиков от:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 form-group">
-                            <label for="" class="control-label">Возраст:</label>
-                            <div class="row">
-                                <div class="col-md-1 col-sm-2">от</div>
-                                <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
-                                <div class="col-md-1 col-sm-2">до</div>
-                                <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <div class="row">
+                                    <label for="" class="control-label">Пол:</label>
+                                </div>
+                                <div class="row">
+                                    <div class="radio col-md-4 col-sm-12">
+                                        <label>
+                                            <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                                            Мужской
+                                        </label>
+                                    </div>
+                                    <div class="radio col-md-4 col-sm-12">
+                                        <label>
+                                            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                                            Женский
+                                        </label>
+                                    </div>
+                                    <div class="radio col-md-4 col-sm-12">
+                                        <label>
+                                            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                                            Неважно
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 form-group">
-                            <button class="btn btn-primary text-uppercase">Найти</button>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <label for="" class="control-label">Тематика:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <label for="" class="control-label">Подписчиков от:</label>
+                                <input type="text" class="form-control">
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-            <div class="row divider">
-                <h3>Блоггеры</h3>
-            </div>
-            <div class="row container-fluid search-results">
-                <p class="col-xs-12 text-center">Результаты поиска</p>
-                <div class="search-labels row">
-                    <div class="col-xs-3"><p class="text-center">Блоггер</p></div>
-                    <div class="col-xs-2"><p class="text-center">Подписчики</p></div>
-                    <div class="col-xs-2"><p class="text-center">Аудитория<br>канала</p></div>
-                    <div class="col-xs-1"><p class="text-center">Цена<br>трансляции</p></div>
-                    <div class="col-xs-1"><p class="text-center">Цена<br>интеграции</p></div>
-                    <div class="col-xs-3"><p class="text-center">Рейтинг</p></div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <label for="" class="control-label">Возраст:</label>
+                                <div class="row">
+                                    <div class="col-md-1 col-sm-2">от</div>
+                                    <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
+                                    <div class="col-md-1 col-sm-2">до</div>
+                                    <div class="col-md-5 col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <button class="btn btn-primary text-uppercase">Создать</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row search-item">
-                    <div class="col-xs-1">
-                        <div class="avatar"></div>
+                <div role="tabpanel" class="tab-pane" id="current">
+                    <p class="text-center">Ниже представлен список ваших текущих заказов</p>
+                    <div class="search-labels row">
+                        <div class="col-xs-4"><p class="text-center">Блоггер</p></div>
+                        <div class="col-xs-2"><p class="text-center">Подписчики</p></div>
+                        <div class="col-xs-2"><p class="text-center">Аудитория<br>канала</p></div>
+                        <div class="col-xs-1"><p class="text-center">Цена<br>трансляции</p></div>
+                        <div class="col-xs-1"><p class="text-center">Цена<br>интеграции</p></div>
+                        <div class="col-xs-3"><p class="text-center">Рейтинг</p></div>
                     </div>
-                    <div class="col-xs-2 blogger">
-                        <h2>Wylsacom</h2>
+                    <div class="row search-item">
+                        <div class="col-xs-1">
+                            <div class="avatar"></div>
+                        </div>
+                        <div class="col-xs-3 orderer">
+                            <h2>Simex</h2>
+                            <h3>Реклама в начале видео</h3>
+                        </div>
+                        <div class="col-xs-2 cost">
+                            <p class="text-center">8000р.</p>
+                        </div>
+                        <div class="col-xs-2 deadline">
+                            <p class="text-center">12.05.2016</p>
+                        </div>
+                        <div class="col-xs-2 status">
+                            <p class="text-center">Ожидает оплаты</p>
+                        </div>
+                        <div class="col-xs-2 more">
+                            <a href="#" class="text-center">Подробнее</a>
+                        </div>
                     </div>
-                    <div class="col-xs-2 subscribers">
-                        <p class="text-center">1 500 тыс.</p>
-                    </div>
-                    <div class="col-xs-2 audience">
-                        <p class="text-center">мужчины</p>
-                        <p class="text-center">от 25 до 35</p>
-                    </div>
-                    <div class="col-xs-1 price-1">
-                        <p class="text-center">8 000р.</p>
-                    </div>
-                    <div class="col-xs-1 price-2">
-                        <p class="text-center">8 000р.</p>
-                    </div>
-                    <div class="col-xs-3 rating">
-                        <p class="text-center">ЛЛЛЛЛ</p>
-                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="completed">
+                    <p class="text-center">Ниже представлен список выполненных заказов</p>
                 </div>
             </div>
 
@@ -150,6 +162,21 @@
 <!--SCRIPTS-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script></script>
+<script>
+    $('#create a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+
+    $('#current a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+
+    $('#completed a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+</script>
 </body>
 </html>
